@@ -1,0 +1,13 @@
+class animal{
+    protected String name ;{
+ 
+        System.out.println);
+ ("i am not an animal im a dog"       
+    }
+}
+class dog extends animal{
+    public static void main(String[]args){
+        dog d = new dog();
+        d.name="java";
+    }
+}

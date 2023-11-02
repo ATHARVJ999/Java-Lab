@@ -1,0 +1,37 @@
+class Print {
+    public void display ( int x , int y , int n){
+        for ( int i=x;i<=y;i++){
+        if(n== 0 ){
+            System.out.println("even");
+            
+            }else{ 
+            System.out.println("odd");}
+        }
+    }
+}
+class thread extends Thread{
+    public void run(){
+        Print p = new Print ();
+        p.display(1,50,6);
+        
+        
+        }
+    
+}
+
+class threads extends Thread{
+   public void run (){
+       Print p = new Print();
+       p.display(1,50,3);
+       
+   }
+}
+public class Main{
+    public static void main (String []args){
+    
+    Thread t1 = new Thread(); 
+   
+   
+    t1.start();
+}
+}

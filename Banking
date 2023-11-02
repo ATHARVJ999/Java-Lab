@@ -1,0 +1,36 @@
+class Banking{
+    int accno;
+    int amount;
+    int damont;
+    static void withdraw(int accno, int amount){
+        if(amount<= 1000){
+            System.out.println("withdrawl approved"  + " amount deducted " + amount);
+        }
+            
+        }
+       void deposit (int damount){
+            System.out.println(" amount deposited");
+        }
+    
+        class thread extends Thread{
+            public void run (){
+            
+                w.withdraw(500);
+            }
+        }
+        class another extends Thread{
+            public void run (){
+                deposit d = new deposit();
+                d.deposit(900);
+                
+            }
+        }
+      public  class Main {
+            public static void main( String []args){
+            Thread t1 = new Thread();
+                t1.run();
+            }
+        }
+}
+    
+  
